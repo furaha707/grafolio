@@ -100,20 +100,162 @@
 				<div class="tit-bx">
 					<p class="tit">Top Creators</p>
 				</div>
-				<ul>
-					<li>
-						<a href="">
-							<div class="img-bx">
-								<img src="//via.placeholder.com/300x300/" alt="프로필" />
+				<ul class="creators" id="container">
+					<script>
+						// 반복할 횟수
+						const repeatCount = 9;
+
+						// 컨테이너 요소를 가져옴
+						const container = document.getElementById('container');
+
+						// for 문을 사용하여 요소를 반복 생성 및 추가
+						for (let i = 1; i <= repeatCount; i++) {
+							// <div> 요소 생성
+							const newList = document.createElement('li');
+							newList.classList.add('creators__item');
+
+							// 텍스트 추가 (번호 표시)
+							newList.innerHTML = `
+
+						<a href="" class="link">
+							<div class="creators__thumb">
+								<div class="img-bx">
+									<img src="//via.placeholder.com/300x300/" alt="프로필" />
+								</div>
+								<button type="button">
+									<i class="xi-plus"></i>
+								</button>
 							</div>
-							<div class="tit-bx">
-								<p class="tit">메로나</p>
-							</div>
+							<p class="tit">메로나</p>
 						</a>
-					</li>
+          `;
+
+							// 생성한 <div> 요소를 컨테이너에 추가
+							container.appendChild(newList);
+						}
+					</script>
 				</ul>
 			</div>
 		</section>
+
+		<section class="section section-discover">
+			<div class="inner">
+				<div class="tit-bx">
+					<p class="tit">Top Creators</p>
+					<ul class="tags">
+						<li class="tags__item"><a href="" class="link on">태그별</a></li>
+						<li class="tags__item"><a href="" class="link">색상별</a></li>
+						<li class="tags__item"><a href="" class="link">유형별</a></li>
+					</ul>
+				</div>
+				<ul class="category">
+					<li class="category__item"><a href="" class="link on">전체</a></li>
+					<li class="category__item"><a href="" class="link">커플</a></li>
+					<li class="category__item"><a href="" class="link">행복한 우리집</a></li>
+					<li class="category__item"><a href="" class="link">꽃</a></li>
+					<li class="category__item"><a href="" class="link">사랑</a></li>
+					<li class="category__item"><a href="" class="link">감성</a></li>
+					<li class="category__item"><a href="" class="link">따뜻한 말</a></li>
+					<li class="category__item"><a href="" class="link">하늘</a></li>
+					<li class="category__item"><a href="" class="link">여행</a></li>
+					<li class="category__item"><a href="" class="link">바다</a></li>
+					<li class="category__item"><a href="" class="link">달력</a></li>
+					<li class="category__item"><a href="" class="link">동물</a></li>
+					<li class="category__item"><a href="" class="link">판타지</a></li>
+					<li class="category__item"><a href="" class="link">식물</a></li>
+				</ul>
+			</div>
+			<ul class="wallpapers">
+				<div class="sort-inner">
+					<div class="sort_select">
+						<button type="button" aria-owns="cd-list" aria-haspopup="true" aria-expanded="false" id="wallpaper_order_btn">
+							<span class="txt">인기순</span>
+							<i class="xi-caret-down-min"></i>
+						</button>
+						<ul class="ly_sort">
+							<li class="item on">
+								<a href="">인기순</a>
+							</li>
+							<li class="item">
+								<a href="">최신순</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="inner">
+					<li class="wallpapers__item">
+						<div class="img-bx">
+							<img src="//via.placeholder.com/420x300/" alt="썸네일" />
+						</div>
+						<div class="hover-bx">
+							<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
+							<div href="/growing" class="hover__info">
+								<div class="wrapper">
+									<a href="" class="thumb">
+										<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
+									</a>
+									<a href="" class="name">그로잉</a>
+									<span class="download">다운로드 <strong>85</strong></span>
+								</div>
+								<button type="button">
+									<i class="xi-download"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="wallpapers__item">
+						<div class="img-bx">
+							<img src="//via.placeholder.com/420x300/" alt="썸네일" />
+						</div>
+						<div class="hover-bx">
+							<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
+							<div href="/growing" class="hover__info">
+								<div class="wrapper">
+									<a href="" class="thumb">
+										<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
+									</a>
+									<a href="" class="name">그로잉</a>
+									<span class="download">다운로드 <strong>85</strong></span>
+								</div>
+								<button type="button">
+									<i class="xi-download"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+					<li class="wallpapers__item">
+						<div class="img-bx">
+							<img src="//via.placeholder.com/420x300/" alt="썸네일" />
+						</div>
+						<div class="hover-bx">
+							<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
+							<div href="/growing" class="hover__info">
+								<div class="wrapper">
+									<a href="" class="thumb">
+										<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
+									</a>
+									<a href="" class="name">그로잉</a>
+									<span class="download">다운로드 <strong>85</strong></span>
+								</div>
+								<button type="button">
+									<i class="xi-download"></i>
+								</button>
+							</div>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</section>
+
+		<footer class="footer">
+			<div class="inner">
+				<ul class="policy">
+					<li class="policy__item"><a href="" class="link">이용약관</a></li>
+					<li class="policy__item"><a href="" class="link">개인정보 처리방침</a></li>
+					<li class="policy__item"><a href="" class="link">Ⓒ Grafolio.</a></li>
+				</ul>
+			</div>
+		</footer>
 		<script>
 			var visualSwiper = new Swiper('.swiper-container', {
 				// loop: true,
