@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>창작자들의 놀이터 : 그라폴리오</title>
+		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/lib/swiper.min.js"></script>
+		<link rel="stylesheet" href="../assets/css/common.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.min.css" />
+		<link rel="stylesheet" href="../assets/css/xeicon/xeicon.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="inner">
+				<h1 class="header__logo">
+					<img src="//via.placeholder.com/200x60/" alt="로고" />
+				</h1>
+				<nav class="header__nav">
+					<a href="" class="link">작품</a>
+					<a href="" class="link">배경화면</a>
+					<a href="" class="link">스토리</a>
+					<a href="" class="link">콜라보레이션</a>
+				</nav>
+				<div class="header__plus">
+					<img src="//via.placeholder.com/20x20/" alt="더보기" />
+				</div>
+			</div>
+		</header>
+		<section class="section section-pick">
+			<div class="inner">
+				<div class="tit-bx">
+					<p class="tit">Editors' Pick</p>
+					<ul class="category">
+						<li class="category__item"><a href="" class="link on">흑백 감성</a></li>
+						<li class="category__item"><a href="" class="link">여름</a></li>
+						<li class="category__item"><a href="" class="link">빈티지</a></li>
+						<li class="category__item"><a href="" class="link">분홍분홍해</a></li>
+						<li class="category__item"><a href="" class="link">식물</a></li>
+					</ul>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="//via.placeholder.com/1920x800/" alt="" />
+									<img class="d-block d-md-none" src="//via.placeholder.com/1440x1200/" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="//via.placeholder.com/1920x800/" alt="" />
+									<img class="d-block d-md-none" src="//via.placeholder.com/1440x1200/" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="//via.placeholder.com/1920x800/" alt="" />
+									<img class="d-block d-md-none" src="//via.placeholder.com/1440x1200/" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="//via.placeholder.com/1920x800/" alt="" />
+									<img class="d-block d-md-none" src="//via.placeholder.com/1440x1200/" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide item">
+							<a href="#" class="link">
+								<div class="img-bx">
+									<img class="d-none d-md-block" src="//via.placeholder.com/1920x800/" alt="" />
+									<img class="d-block d-md-none" src="//via.placeholder.com/1440x1200/" alt="" />
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-control">
+						<div class="container">
+							<button type="button" class="swiper-button swiper-button--prev">
+								<i class="xi-angle-left"></i>
+							</button>
+							<button type="button" class="swiper-button swiper-button--next">
+								<i class="xi-angle-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section-creator">
+			<div class="inner">
+				<div class="tit-bx">
+					<p class="tit">Top Creators</p>
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<div class="img-bx">
+								<img src="//via.placeholder.com/300x300/" alt="프로필" />
+							</div>
+							<div class="tit-bx">
+								<p class="tit">메로나</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<script>
+			var visualSwiper = new Swiper('.swiper-container', {
+				// loop: true,
+				// effect: 'fade',
+				// fadeEffect: {
+				// 	crossFade: true,
+				// },
+				// slidesPerGroup: 4,
+				spaceBetween: 30,
+				slidesPerView: 4.5, // 한 슬라이드에 보여줄 갯수
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				autoHeight: true,
+				navigation: {
+					prevEl: '.swiper-button--prev',
+					nextEl: '.swiper-button--next',
+				},
+			});
+		</script>
+	</body>
+</html>
+

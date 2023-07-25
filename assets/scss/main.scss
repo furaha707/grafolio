@@ -1,3 +1,178 @@
-body {
-	background-color: red;
+@import './mixin/img-to-bg';
+@import './mixin/media-query';
+
+// 변수선언
+$color-1: #00d084;
+
+// Common
+.inner {
+	max-width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	margin: 0 auto;
 }
+
+.section {
+	padding: 50px 0;
+}
+
+// Header
+.header {
+	border-bottom: 1px solid #ececec;
+	background-color: #fff;
+	.inner {
+		display: flex;
+		align-items: center;
+	}
+	&__nav {
+		display: flex;
+		.link {
+			position: relative;
+			padding: 0 10px;
+			display: block;
+			font-size: 15px;
+			font-weight: 600;
+			color: #777;
+			line-height: 35px;
+			text-decoration: none;
+		}
+	}
+}
+
+.tit-bx {
+	display: flex;
+	align-items: center;
+	.tit {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	.category {
+		display: flex;
+		&__item {
+			padding: 0 5px;
+			.link {
+				display: inline-block;
+				height: 32px;
+				padding: 0 20px;
+				border-radius: 19px;
+				box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.06);
+				border: solid 1px rgba(153, 153, 153, 0.2);
+				font-size: 14px;
+				color: #111;
+				line-height: 31px;
+				&.on {
+					color: #fff;
+					font-weight: 600;
+					border-color: rgba(0, 0, 0, 0);
+					background: #e4bc2c;
+				}
+			}
+		}
+	}
+}
+
+// // 메인 비주얼 텍스트 영역 트랜지션
+// @mixin mvTextAnim($offset, $duration) {
+// 	transform: translateY($offset);
+// 	opacity: 0;
+// 	transition: #{$duration}ms opacity, #{$duration}ms transform;
+// }
+
+// 메인 비주얼 페이지네이션 프로그레스 애니메이션
+@keyframes progress {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.section-pick {
+	.swiper-wrapper {
+		padding: 20px 0;
+	}
+
+	.swiper-slide {
+		// S : Text Transition
+
+		// ( .swiper-slide-active 일 때 )
+		&-active {
+			.txt-bx {
+				.title,
+				.text {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+		}
+
+		// E : Text Transition
+	}
+
+	.swiper-button {
+		z-index: 10;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #fff;
+		font-size: rem(40);
+		transition: 300ms color;
+		background-color: rgba(0, 0, 0, 0.2);
+		width: 50px;
+		height: 50px;
+
+		&:hover {
+			color: $color-1;
+		}
+
+		&--prev {
+			left: 0;
+		}
+
+		&--next {
+			right: 0;
+		}
+
+		@include mdq-max(xxl) {
+			display: none;
+		}
+	}
+
+	.item {
+		position: relative;
+	}
+
+	.img-bx {
+		@include img-to-bg(100%);
+		border-radius: 15px;
+		box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.txt-bx {
+		//영역의 중앙 노출
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		text-shadow: 0 0 1em rgba(#000, 0.1);
+		letter-spacing: letterSpacing(-50);
+		line-height: 1.3;
+
+		.title {
+			font-size: em(80);
+		}
+
+		.text {
+			margin-top: 1em;
+			font-size: em(30);
+			font-weight: 300;
+			transition-delay: 300ms !important;
+		}
+	}
+}
+
