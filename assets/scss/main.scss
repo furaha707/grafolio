@@ -1,6 +1,3 @@
-@import './mixin/img-to-bg';
-@import './mixin/media-query';
-
 // 변수선언
 $color-1: #00d084;
 
@@ -25,6 +22,7 @@ body {
 .header {
 	border-bottom: 1px solid #ececec;
 	background-color: #fff;
+	position: relative;
 	.inner {
 		padding: 20px;
 		display: flex;
@@ -307,7 +305,7 @@ body {
 	color: white;
 	text-align: center;
 	position: absolute;
-	left: 100vw;
+	left: 100%;
 	transition: left 0.3s;
 	top: 0;
 	width: 100%;
@@ -609,24 +607,6 @@ body {
 		}
 	}
 }
-
-// // 메인 비주얼 텍스트 영역 트랜지션
-// @mixin mvTextAnim($offset, $duration) {
-// 	transform: translateY($offset);
-// 	opacity: 0;
-// 	transition: #{$duration}ms opacity, #{$duration}ms transform;
-// }
-
-// 메인 비주얼 페이지네이션 프로그레스 애니메이션
-// @keyframes progress {
-// 	0% {
-// 		width: 0;
-// 	}
-
-// 	100% {
-// 		width: 100%;
-// 	}
-// }
 
 // Pick 섹션
 .section-pick {
@@ -1055,6 +1035,7 @@ body {
 		.color_pick {
 			> div {
 				display: flex;
+				flex-wrap: wrap;
 			}
 			.color_box {
 				display: block;
@@ -1068,6 +1049,12 @@ body {
 				border-radius: 2px;
 				line-height: 30px;
 				text-align: center;
+				@include mdq-max(lg) {
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					margin-bottom: 5px;
+				}
 				&:first-child {
 					border: 1px solid #ddd;
 				}
@@ -1082,6 +1069,12 @@ body {
 						background-position: -156px -52px;
 						width: 21px;
 						height: 17px;
+						@include mdq-max(lg) {
+							background-size: 239px 214px;
+							background-position: -157px -56px;
+							width: 18px;
+							height: 18px;
+						}
 					}
 				}
 			}
@@ -1308,9 +1301,9 @@ body {
 						color: #555;
 						letter-spacing: -0.3px;
 						white-space: nowrap;
-					}
-					&.on {
-						font-weight: bold;
+						&.on {
+							font-weight: bold;
+						}
 					}
 				}
 			}

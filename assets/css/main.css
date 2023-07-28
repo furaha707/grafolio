@@ -17,6 +17,7 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #fff;
+  position: relative;
 }
 .header .inner {
   padding: 20px;
@@ -307,7 +308,7 @@ body {
   color: white;
   text-align: center;
   position: absolute;
-  left: 100vw;
+  left: 100%;
   transition: left 0.3s;
   top: 0;
   width: 100%;
@@ -1092,6 +1093,7 @@ body {
 }
 .section-discover .category-wrap .color_pick > div {
   display: flex;
+  flex-wrap: wrap;
 }
 .section-discover .category-wrap .color_pick .color_box {
   display: block;
@@ -1104,6 +1106,14 @@ body {
   border-radius: 2px;
   line-height: 30px;
   text-align: center;
+}
+@media all and (max-width: 1024px) {
+  .section-discover .category-wrap .color_pick .color_box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
 }
 .section-discover .category-wrap .color_pick .color_box:first-child {
   border: 1px solid #ddd;
@@ -1118,6 +1128,14 @@ body {
   background-position: -156px -52px;
   width: 21px;
   height: 17px;
+}
+@media all and (max-width: 1024px) {
+  .section-discover .category-wrap .color_pick .color_box.on:before {
+    background-size: 239px 214px;
+    background-position: -157px -56px;
+    width: 18px;
+    height: 18px;
+  }
 }
 .section-discover .category {
   display: flex;
@@ -1372,7 +1390,7 @@ body {
   letter-spacing: -0.3px;
   white-space: nowrap;
 }
-.section-discover .wallpapers .sort-select__list .item.on {
+.section-discover .wallpapers .sort-select__list .item a.on {
   font-weight: bold;
 }
 

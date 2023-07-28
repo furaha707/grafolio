@@ -4,19 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>창작자들의 놀이터 : 그라폴리오</title>
-		<script src="../assets/js/main.js"></script>
-		<script src="../assets/js/lib/swiper.min.js"></script>
 		<link rel="stylesheet" href="../assets/css/common.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.min.css" />
 		<link rel="stylesheet" href="../assets/css/xeicon/xeicon.css" />
+		<link rel="shortcut icon" href="https://ssl.pstatic.net/static/grafolio/m/img/favicon2.ico" />
+		<script src="../assets/js/lib/swiper.min.js"></script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="inner">
 				<div class="header-left">
-					<h1 class="header__logo">
-						<!-- <img src="../assets/images/logo.png" alt="로고" /> -->
-					</h1>
+					<h1 class="header__logo"></h1>
 					<nav class="header__nav">
 						<a href="" class="link">작품</a>
 						<a href="" class="link">배경화면</a>
@@ -49,10 +47,14 @@
 									<a href="https://grafolio.naver.com/help.grfl" target="_blank">도움말</a>
 								</li>
 								<li id="gnb_lang_menu" class="type_lang">
-									<a id="current_locale" class="current_locale" href="javascript:void(0)" role="combobox">한국어<i class="ico_arr"></i></a>
+									<a id="current_locale" class="current_locale" href="javascript:void(0)" role="combobox">한국어<i class="ico_arr"></i> </a>
 									<ul id="lang_list" role="listbox" class="list_lang">
-										<li id="ko_KR" role="option" class="on"><a href="javascript:selectLocale('ko_KR');">한국어</a></li>
-										<li id="en_US" role="option"><a href="javascript:selectLocale('en_US');">English(US)</a></li>
+										<li id="ko_KR" class="on">
+											<a href="javascript:selectLocale('ko_KR');">한국어</a>
+										</li>
+										<li id="en_US">
+											<a href="javascript:selectLocale('en_US');">English(US)</a>
+										</li>
 									</ul>
 								</li>
 							</ul>
@@ -91,7 +93,7 @@
 						<h3 class="recommend-title">추천 크리에이터</h3>
 						<ul class="recommend-list">
 							<li>
-								<a href="/hajjinana">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20210503_109/1619974830872yRpzq_JPEG/IMG_20190723_160852_697.jpg" width="80" height="80" alt="" />
 									</div>
@@ -100,7 +102,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/heyrose">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20220907_16/1662479749120prfWh_JPEG/LOGO.jpg" width="80" height="80" alt="" />
 									</div>
@@ -109,7 +111,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/shoohee_">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20230306_107/1678074241901K3Q05_PNG/__.PNG" width="80" height="80" alt="" />
 									</div>
@@ -118,7 +120,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/autostadt">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20220805_14/1659661399751WKm1J_JPEG/2021_VMB_Jack-41_high.jpg" width="80" height="80" alt="" />
 									</div>
@@ -132,7 +134,7 @@
 						<h3 class="recommend-title">추천 작품</h3>
 						<ul class="recommend-list">
 							<li>
-								<a href="/works/2518503">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20230722_10/1690003754210pp03j_JPEG/%B2%BF%BD%E1%B4%D1%C0%E5_019.JPG?type=f240_160" width="120" height="80" alt="이미지" />
 									</div>
@@ -141,7 +143,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/works/2518100">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20230721_71/16898674387522laic_JPEG/3G2A4650_1.jpg?type=f240_160" width="120" height="80" alt="이미지" />
 									</div>
@@ -150,7 +152,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="/works/1940855">
+								<a href="#">
 									<div class="thumb">
 										<img src="https://g-grafolio.pstatic.net/20210513_71/1620905955324G5qAy_JPEG/%BE%D6%B8%C5%C7%D1_%BE%C6%C0%CC_jpg.jpg?type=f240_160" width="120" height="80" alt="이미지" />
 									</div>
@@ -211,364 +213,18 @@
 					<p class="tit">Editors' Pick</p>
 					<div class="category-inner">
 						<ul class="category">
-							<li class="category__item"><a href="" class="link on" data-category="summer">여름</a></li>
-							<li class="category__item"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
-							<li class="category__item"><a href="" class="link" data-category="sky">하늘</a></li>
-							<li class="category__item"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
-							<li class="category__item"><a href="" class="link" data-category="botanic">식물</a></li>
+							<li class="category__item top-cate"><a href="" class="link on" data-category="summer">여름</a></li>
+							<li class="category__item top-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
+							<li class="category__item top-cate"><a href="" class="link" data-category="sky">하늘</a></li>
+							<li class="category__item top-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
+							<li class="category__item top-cate"><a href="" class="link" data-category="botanic">식물</a></li>
+							<li class="category__item top-cate"><a href="" class="link" data-category="flower">꽃</a></li>
+							<li class="category__item top-cate"><a href="" class="link" data-category="sea">바다</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<script>
-							const categoryButtons = document.querySelectorAll('.category__item .link');
-							const swiperWrap = document.querySelector('.swiper-wrapper');
-
-							let slides = [
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 2',
-									image: '../assets/images/thumb01.png',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '90',
-									category: 'summer',
-									date: '23.06.15',
-								},
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 3',
-									image: '../assets/images/thumb02.jpg',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '84',
-									category: 'brunch',
-									date: '22.04.23',
-								},
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 3',
-									image: '../assets/images/thumb03.jpg',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '84',
-									category: 'botanic',
-									date: '23.01.02',
-								},
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 3',
-									image: '../assets/images/thumb04.png',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '84',
-									category: 'sky',
-									date: '22.12.27',
-								},
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 3',
-									image: '../assets/images/thumb05.png',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '84',
-									category: 'pink',
-									date: '22.04.11',
-								},
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 3',
-									image: '../assets/images/thumb06.jpg',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '84',
-									category: 'botanic',
-									date: '22.02.28',
-								},
-								{
-									link: '#',
-									title: '벼랑위의 포뇨 물 속 배경화면 3',
-									image: '../assets/images/thumb07.jpeg',
-									thumbImg: 'https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32',
-									name: '그로잉',
-									download: '84',
-									category: 'pink',
-									date: '23.05.25',
-								},
-							];
-
-							function render(list) {
-								const slidesList = list
-									.map((item) => {
-										return `
-									<div class="swiper-slide item">
-								<a href="${item.link}" class="link">
-									<div class="img-bx">
-										<img src="${item.image}" alt="썸네일" />
-									</div>
-									<div class="hover-bx">
-										<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">${item.name}</a>
-										<div href="/growing" class="hover__info">
-											<div class="wrapper">
-												<a href="" class="thumb">
-													<img src="${item.thumbImg}" alt="" />
-												</a>
-												<a href="" class="name">${item.name}</a>
-												<span class="download">다운로드 <strong>${item.download}</strong></span>
-											</div>
-											<button type="button"></button>
-										</div>
-									</div>
-								</a>
-							</div>
-									`;
-									})
-									.join('');
-
-								swiperWrap.innerHTML = slidesList;
-							}
-
-							render(slides);
-
-							var thumbSwiper = new Swiper('.swiper-container', {
-								// loop: true,
-								// effect: 'fade',
-								// fadeEffect: {
-								// 	crossFade: true,
-								// },
-								// slidesPerGroup: 4,
-								spaceBetween: 10,
-								slidesPerView: 2.5, // 한 슬라이드에 보여줄 갯수
-								// autoplay: {
-								// 	delay: 5000,
-								// 	disableOnInteraction: false,
-								// },
-								autoHeight: true,
-								navigation: {
-									prevEl: '.swiper-button--prev',
-									nextEl: '.swiper-button--next',
-								},
-								breakpoints: {
-									768: {
-										slidesPerView: 3.5, //브라우저가 768보다 클 때
-										spaceBetween: 20,
-									},
-									1200: {
-										slidesPerView: 4.2, //브라우저가 768보다 클 때
-										spaceBetween: 20,
-									},
-								},
-							});
-
-							categoryButtons.forEach((button) => {
-								button.addEventListener('click', (e) => {
-									e.preventDefault();
-
-									for (let j = 0; j < categoryButtons.length; j++) {
-										categoryButtons[j].classList.remove('on');
-									}
-									e.target.classList.add('on');
-									const selectedCategory = button.dataset.category;
-
-									console.log(selectedCategory);
-
-									const filteredItems = slides.filter((item) => item.category === selectedCategory);
-									render(filteredItems);
-
-									options = {
-										// slidesPerGroup: 4,
-										spaceBetween: 10,
-										slidesPerView: 2.5, // 한 슬라이드에 보여줄 갯수
-										// autoplay: {
-										// 	delay: 5000,
-										// 	disableOnInteraction: false,
-										// },
-										autoHeight: true,
-										navigation: {
-											prevEl: '.swiper-button--prev',
-											nextEl: '.swiper-button--next',
-										},
-										breakpoints: {
-											768: {
-												slidesPerView: 3.5, //브라우저가 768보다 클 때
-												spaceBetween: 20,
-											},
-											1200: {
-												slidesPerView: 4.2, //브라우저가 768보다 클 때
-												spaceBetween: 20,
-											},
-										},
-									};
-
-									// Swiper.destroy();
-									// document.querySelector('.swiper-wrapper').setAttribute('style', '');
-									var thumbSwiper = new Swiper('.swiper-container', options);
-								});
-							});
-						</script>
-
-						<!-- <div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb01.png" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div> -->
-						<!-- <div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb02.jpg" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb03.jpg" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb04.png" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb05.png" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb06.jpg" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb07.jpeg" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="swiper-slide item">
-							<a href="#" class="link">
-								<div class="img-bx">
-									<img src="../assets/images/thumb08.jpg" alt="썸네일" />
-								</div>
-								<div class="hover-bx">
-									<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-									<div href="/growing" class="hover__info">
-										<div class="wrapper">
-											<a href="" class="thumb">
-												<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-											</a>
-											<a href="" class="name">그로잉</a>
-											<span class="download">다운로드 <strong>85</strong></span>
-										</div>
-										<button type="button"></button>
-									</div>
-								</div>
-							</a>
-						</div> -->
-					</div>
+					<div class="swiper-wrapper"></div>
 					<div class="swiper-control">
 						<div class="container">
 							<button type="button" class="swiper-button swiper-button--prev">
@@ -588,40 +244,7 @@
 					<p class="tit">Top Creators</p>
 				</div>
 				<div class="creators-wrap">
-					<ul class="creators" id="container">
-						<script>
-							// 반복할 횟수
-							const repeatCount = 9;
-
-							// 컨테이너 요소를 가져옴
-							const container = document.getElementById('container');
-
-							// for 문을 사용하여 요소를 반복 생성 및 추가
-							for (let i = 1; i <= repeatCount; i++) {
-								// <div> 요소 생성
-								const newList = document.createElement('li');
-								newList.classList.add('creators__item');
-
-								// 텍스트 추가 (번호 표시)
-								newList.innerHTML = `
-
-						<a href="" class="link">
-							<div class="creators__thumb">
-								<div class="img-bx">
-									<img src="../assets/images/creator${i}.png" alt="프로필" />
-								</div>
-								<button type="button" class="btn-plus">
-								</button>
-							</div>
-							<p class="tit">메로나</p>
-						</a>
-          `;
-
-								// 생성한 <div> 요소를 컨테이너에 추가
-								container.appendChild(newList);
-							}
-						</script>
-					</ul>
+					<ul class="creators" id="container"></ul>
 				</div>
 			</div>
 		</section>
@@ -637,57 +260,48 @@
 				</div>
 				<div class="category-wrap">
 					<ul class="category">
-						<li class="category__item btm-cate"><a href="" class="link on">전체</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">커플</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">행복한 우리집</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">꽃</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">사랑</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">감성</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">따뜻한 말</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">하늘</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">여행</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">바다</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">달력</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">동물</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">판타지</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">식물</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">여행</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">바다</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">달력</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">동물</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">판타지</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">식물</a></li>
+						<li class="category__item btm-cate"><a href="" class="link on all-btn">전체</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="summer">여름</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="sky">하늘</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="botanic">식물</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="flower">꽃</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="sea">바다</a></li>
 					</ul>
 					<button class="toggle-btn"></button>
 				</div>
 				<div class="category-wrap" style="display: none">
-					<div class="color_pick" id="colorPicker" role="tabpanel" aria-labelledby="tabColor" style="display: block">
-						<div role="radiogroup">
-							<span class="color_box border_box" data-value="ffffff" aria-label="흰색" aria-checked="false" role="radio" style="background-color: #fff" tabindex="0"></span>
-							<span class="color_box" data-value="ff0000" aria-label="빨간색" role="radio" aria-checked="true" style="background-color: #ff0200" tabindex="0"></span>
-							<span class="color_box" data-value="ff6d01" aria-label="주황색" role="radio" aria-checked="false" style="background-color: #ff6d01" tabindex="0"></span>
-							<span class="color_box" data-value="ffc002" aria-label="노란색" role="radio" aria-checked="false" style="background-color: #ffc002" tabindex="0"></span>
-							<span class="color_box" data-value="55c40c" aria-label="연두색" role="radio" aria-checked="false" style="background-color: #55c40c" tabindex="0"></span>
-							<span class="color_box" data-value="19a200" aria-label="초록색" role="radio" aria-checked="false" style="background-color: #19a200" tabindex="0"></span>
-							<span class="color_box" data-value="00bdce" aria-label="하늘색" role="radio" aria-checked="false" style="background-color: #00bdce" tabindex="0"></span>
-							<span class="color_box" data-value="0166ff" aria-label="파랑색" role="radio" aria-checked="false" style="background-color: #0166ff" tabindex="0"></span>
-							<span class="color_box" data-value="8a00ff" aria-label="보라색" role="radio" aria-checked="false" style="background-color: #8a00ff" tabindex="0"></span>
-							<span class="color_box" data-value="ff1ed3" aria-label="핑크색" role="radio" aria-checked="false" style="background-color: #ff1ed3" tabindex="0"></span>
-							<span class="color_box" data-value="e9c2a9" aria-label="노란빛 분홍색" role="radio" aria-checked="false" style="background-color: #e9c2a9" tabindex="0"></span>
-							<span class="color_box" data-value="c58a11" aria-label="연한 갈색" role="radio" aria-checked="false" style="background-color: #c58a11" tabindex="0"></span>
-							<span class="color_box" data-value="753515" aria-label="갈색" role="radio" aria-checked="false" style="background-color: #753515" tabindex="0"></span>
-							<span class="color_box" data-value="949494" aria-label="회색" role="radio" aria-checked="false" style="background-color: #949494" tabindex="0"></span>
-							<span class="color_box" data-value="000000" aria-label="검은색" role="radio" aria-checked="false" style="background-color: #000" tabindex="0"></span>
+					<div class="color_pick" id="colorPicker" style="display: block">
+						<div>
+							<span class="color_box border_box" data-category="ffffff" style="background-color: #fff" tabindex="0"></span>
+							<span class="color_box" data-category="ff0000" aria-label="빨간색" style="background-color: #ff0200" tabindex="0"></span>
+							<span class="color_box" data-category="ff6d01" aria-label="주황색" style="background-color: #ff6d01" tabindex="0"></span>
+							<span class="color_box" data-category="ffc002" aria-label="노란색" style="background-color: #ffc002" tabindex="0"></span>
+							<span class="color_box" data-category="55c40c" aria-label="연두색" style="background-color: #55c40c" tabindex="0"></span>
+							<span class="color_box" data-category="19a200" aria-label="초록색" style="background-color: #19a200" tabindex="0"></span>
+							<span class="color_box" data-category="00bdce" aria-label="하늘색" style="background-color: #00bdce" tabindex="0"></span>
+							<span class="color_box" data-category="0166ff" aria-label="파랑색" style="background-color: #0166ff" tabindex="0"></span>
+							<span class="color_box" data-category="8a00ff" aria-label="보라색" style="background-color: #8a00ff" tabindex="0"></span>
+							<span class="color_box" data-category="ff1ed3" aria-label="핑크색" style="background-color: #ff1ed3" tabindex="0"></span>
+							<span class="color_box" data-category="e9c2a9" aria-label="노란빛 분홍색" style="background-color: #e9c2a9" tabindex="0"></span>
+							<span class="color_box" data-category="c58a11" aria-label="연한 갈색" style="background-color: #c58a11" tabindex="0"></span>
+							<span class="color_box" data-category="753515" aria-label="갈색" style="background-color: #753515" tabindex="0"></span>
+							<span class="color_box" data-category="949494" aria-label="회색" style="background-color: #949494" tabindex="0"></span>
+							<span class="color_box" data-category="000000" aria-label="검은색" style="background-color: #000" tabindex="0"></span>
 						</div>
 					</div>
 				</div>
 				<div class="category-wrap" style="display: none">
 					<ul class="category">
-						<li class="category__item btm-cate"><a href="" class="link on">전체2</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">커플2</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">행복한 우리집</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">꽃</a></li>
-						<li class="category__item btm-cate"><a href="" class="link">사랑</a></li>
+						<li class="category__item btm-cate"><a href="" class="link on all-btn">전체</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="summer">여름</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="sky">하늘</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="botanic">식물</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="flower">꽃</a></li>
+						<li class="category__item btm-cate"><a href="" class="link" data-category="sea">바다</a></li>
 					</ul>
 				</div>
 			</div>
@@ -698,71 +312,16 @@
 							<span class="txt">인기순</span>
 						</button>
 						<ul class="sort-select__list">
-							<li class="item on">
+							<li class="item on popular-btn">
 								<a href="">인기순</a>
 							</li>
-							<li class="item">
+							<li class="item recent-btn">
 								<a href="">최신순</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="inner">
-					<li class="wallpapers__item">
-						<div class="img-bx">
-							<img src="../assets/images/thumb08.jpg" alt="썸네일" />
-						</div>
-						<div class="hover-bx">
-							<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-							<div href="/growing" class="hover__info">
-								<div class="wrapper">
-									<a href="" class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-									</a>
-									<a href="" class="name">그로잉</a>
-									<span class="download">다운로드 <strong>85</strong></span>
-								</div>
-								<button type="button"></button>
-							</div>
-						</div>
-					</li>
-					<li class="wallpapers__item">
-						<div class="img-bx">
-							<img src="../assets/images/thumb09.jpeg" alt="썸네일" />
-						</div>
-						<div class="hover-bx">
-							<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-							<div href="/growing" class="hover__info">
-								<div class="wrapper">
-									<a href="" class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-									</a>
-									<a href="" class="name">그로잉</a>
-									<span class="download">다운로드 <strong>85</strong></span>
-								</div>
-								<button type="button"></button>
-							</div>
-						</div>
-					</li>
-					<li class="wallpapers__item">
-						<div class="img-bx">
-							<img src="../assets/images/thumb10.jpeg" alt="썸네일" />
-						</div>
-						<div class="hover-bx">
-							<a href="/wallpaper/541237" class="hover__tit" aria-label="벼랑의의 포뇨 물 속 배경화면 2">벼랑의의 포뇨 물 속 배경화면 2</a>
-							<div href="/growing" class="hover__info">
-								<div class="wrapper">
-									<a href="" class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20221002_184/1664637385027QSRuY_PNG/043DB0D1-3FCE-462A-8979-B26275E3AB68.png?type=f32_32" alt="" />
-									</a>
-									<a href="" class="name">그로잉</a>
-									<span class="download">다운로드 <strong>85</strong></span>
-								</div>
-								<button type="button"></button>
-							</div>
-						</div>
-					</li>
-				</div>
+				<div class="inner"></div>
 			</ul>
 		</section>
 		<footer class="footer">
@@ -778,143 +337,7 @@
 				</ul>
 			</div>
 		</footer>
-		<script>
-			// 헤더 검색창
-			const inputElement = document.getElementById('search');
-			const recommendDiv = document.querySelector('.recommend-wrap');
-			const recommendClose = document.querySelector('.btn-close');
-			const body = document.querySelector('body');
-
-			function handleFocusEvent(e) {
-				recommendDiv.classList.add('active');
-			}
-
-			function handleOutEvent() {
-				recommendDiv.classList.remove('active');
-			}
-
-			body.addEventListener('click', function (event) {
-				if (event.target.closest('.search')) {
-					recommendDiv.classList.add('active');
-				} else if (event.target.classList.contains('btn-close')) {
-					recommendDiv.classList.remove('active');
-				} else {
-					const isClickInsideWrapper = event.target.closest('.recommend-wrap');
-					if (!isClickInsideWrapper) {
-						recommendDiv.classList.remove('active');
-					}
-				}
-			});
-
-			// 더보기 버튼
-			const moreBtn = document.querySelector('.header__plus');
-			const moreWrap = document.querySelector('.ly_area');
-
-			moreBtn.addEventListener('click', (e) => {
-				moreWrap.classList.toggle('show');
-			});
-
-			// 모바일 메뉴
-			const mobileBtn = document.querySelector('.btn-mobile');
-			const mobileMenu = document.querySelector('.mobile-menu');
-			const mobileClose = document.querySelector('.mobile-close');
-
-			mobileBtn.addEventListener('click', (e) => {
-				mobileMenu.classList.toggle('show');
-			});
-
-			mobileClose.addEventListener('click', (e) => {
-				mobileMenu.classList.remove('show');
-			});
-
-			// 이벤트 핸들러 등록
-			inputElement.addEventListener('focus', handleFocusEvent);
-			recommendClose.addEventListener('click', handleOutEvent);
-
-			// 에디터 체킹
-			const addBtn = document.querySelectorAll('.btn-plus');
-
-			addBtn.forEach(function (ele) {
-				ele.addEventListener('click', (e) => {
-					e.preventDefault();
-					e.target.classList.toggle('plus');
-				});
-			});
-
-			// 카테고리 높이
-			const plusBtn = document.querySelector('.toggle-btn');
-			const cateWrap = document.querySelector('.category-wrap');
-
-			plusBtn.addEventListener('click', (e) => {
-				e.target.classList.toggle('on');
-				cateWrap.classList.toggle('show');
-			});
-
-			// 인기순
-			const sortBtn = document.querySelector('.sort-btn');
-			const selectWrap = document.querySelector('.sort-select__list');
-
-			sortBtn.addEventListener('click', (e) => {
-				e.target.classList.toggle('on');
-				selectWrap.classList.toggle('show');
-			});
-
-			// 언어선택
-			const langBtn = document.querySelectorAll('.current_locale');
-
-			langBtn.forEach(function (ele) {
-				ele.addEventListener('click', (e) => {
-					// e.preventDefault();
-					e.target.classList.toggle('on');
-					e.target.nextElementSibling.classList.toggle('show');
-				});
-			});
-
-			// 카테고리 in 카테고리
-			const btmCate = document.querySelectorAll('.tags__item .link');
-			const btmWrap = document.querySelectorAll('.section-discover .category-wrap');
-
-			for (let i = 0; i < btmCate.length; i++) {
-				btmCate[i].addEventListener('click', function (e) {
-					e.preventDefault();
-
-					for (let j = 0; j < btmWrap.length; j++) {
-						btmWrap[j].style.display = 'none';
-						btmCate[j].classList.remove('on');
-					}
-
-					btmWrap[i].style.display = 'block';
-					e.target.classList.add('on');
-				});
-			}
-
-			// color 박스
-			const colorBtn = document.querySelectorAll('.color_box');
-
-			colorBtn.forEach(function (item) {
-				item.addEventListener('click', function (e) {
-					for (let j = 0; j < colorBtn.length; j++) {
-						colorBtn[j].classList.remove('on');
-					}
-
-					e.target.classList.add('on');
-				});
-			});
-
-			// 하단 태그
-			const btmTag = document.querySelectorAll('.btm-cate .link');
-
-			btmTag.forEach(function (item) {
-				item.addEventListener('click', function (e) {
-					e.preventDefault();
-					for (let j = 0; j < btmTag.length; j++) {
-						btmTag[j].classList.remove('on');
-					}
-
-					e.target.classList.add('on');
-				});
-			});
-		</script>
+		<script src="../assets/js/main.js"></script>
 	</body>
 </html>
 
