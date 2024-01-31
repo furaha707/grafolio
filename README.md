@@ -32,20 +32,14 @@ HTML, CSS, JS 를 활용하여 자신이 원하는 페이지를 선정해 클론
 같은 클래스를 가진 여러 개의 버튼을 클릭했을 때, 해당 버튼만 활성화되고 나머지 버튼은 비활성화 시키는 것을
 2중 for 문으로 활용 가능하다는 것을 알게 되었습니다.
 
-![이미지](http://grafolio.dothome.co.kr/forloop.png)
-
 2. 객체 date 표기법<br>
 객체 속성 중 date 부분에 'YY.MM.DD' 라고 표기했었는데 'invalid Date' 오류가 떠서
 new Date() 사용해서 객체를 생성할 때는 'YYYY.MM.DD' 이 형식을 지켜야 한다는 것을 알게 되었습니다.
-
-![이미지](http://grafolio.dothome.co.kr/date.png)
 
 3. 공유되는 배열은 처음에 선언하기<br>
 아래 3개의 버튼을 누를 때마다 walls 에서 필터된 배열을 만들어냈는데
 그 배열을 담은 변수를 어떻게 서로 공유하지 싶다가 애초에 필터링 될 배열을 선언해 주고 
 이벤트 일어날 때마다 재할당하면 된다는 것을 알게 되었습니다.
-
-![이미지](http://grafolio.dothome.co.kr/filtered.png)
 
 
 
